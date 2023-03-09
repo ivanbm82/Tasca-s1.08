@@ -12,7 +12,7 @@ public class App {
 		List<String> lista1 = Arrays.asList("gato", "pollo", "cocodrilo", "ivan", "lapiz");
 
 		List<String> listaFiltrada = lista1.stream()
-				.filter(a -> a.contains("o"))
+				.filter((a) -> a.contains("o"))
 				.collect(Collectors.toList());
 		listaFiltrada.forEach(a -> System.out.println(a));
 
